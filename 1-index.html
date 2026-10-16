@@ -1474,14 +1474,13 @@
     /* 6. Buttery Scroll-Driven Staggered Reveals (IntersectionObserver) */
     .reveal-on-scroll {
       opacity: 0;
-      transform: translate3d(0, 48px, 0) scale(0.96);
-      filter: blur(4px);
+      transform: translate3d(0, 24px, 0);
+      filter: none;
       transition:
-        opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-        transform 0.9s cubic-bezier(0.22, 1.25, 0.36, 1),
-        filter 0.7s ease;
+        opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
       transition-delay: var(--reveal-delay, 0ms);
-      will-change: opacity, transform, filter;
+      will-change: opacity, transform;
     }
     .reveal-on-scroll.is-visible {
       opacity: 1;
@@ -1574,6 +1573,17 @@ button:active,a:active{filter:brightness(.88);transform:scale(.97)}
 @media(max-width:1120px){body.reduced-motion .centerpiece-stage,body[data-flavor].reduced-motion .centerpiece-stage{transform:none!important}body.reduced-motion .splash-crown{display:none!important}}
 body.reduced-motion *,body.reduced-motion *::before,body.reduced-motion *::after{transition:none!important;animation:none!important}
 </style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%230d5c37%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2244%22%20font-family%3D%22Arial%2Csans-serif%22%20font-size%3D%2240%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffffff%22%20text-anchor%3D%22middle%22%3EF%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fizzly | Sip Fearless. Chill Mode On.">
+<meta property="og:description" content="Fictional concept brand. Not a real product, flavors and details are imaginary.">
+<meta property="og:image" content="https://fizzly-soda.vercel.app/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fizzly | Sip Fearless. Chill Mode On.">
+<meta name="twitter:description" content="Fictional concept brand. Not a real product, flavors and details are imaginary.">
+<meta name="twitter:image" content="https://fizzly-soda.vercel.app/og.jpg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#062b1a">
 </head>
 <body data-flavor="green">
   <a href="#main-hero" class="skip-link">Skip to hero stage</a>
