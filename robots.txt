@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fizzly-soda.vercel.app/sitemap.xml
